@@ -5,3 +5,5 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates build-b
     wget "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python3 && \
     pip3 install attic && \
     apk del build-dependencies
+
+ENTRYPOINT ["attic"]
