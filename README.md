@@ -20,3 +20,9 @@ docker run -v /var/repository/location:/repository \
 docker run -v /var/repository/location:/repository \
            -v /var/destination:/destination bwaldher/attic attic extract /repository::2016-02-19T16:44:10+00:00 /destination
 ```
+
+## Notes
+
+### Unknown repositories
+
+If you run into issues with unknown repositories, rather than use `ATTIC_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK` it's recommended that you add `-v /var/attic:/root/.attic` to preserve attic's cache of repositories.

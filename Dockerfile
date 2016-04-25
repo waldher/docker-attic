@@ -6,4 +6,6 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates build-b
     pip3 install attic && \
     apk del build-dependencies
 
+VOLUME /root/.attic
+
 ENTRYPOINT ["attic"]
