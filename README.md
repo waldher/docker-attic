@@ -25,4 +25,4 @@ docker run -v /var/repository/location:/repository \
 
 ### Unknown repositories
 
-If you run into issues with unknown repositories, rather than use `ATTIC_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK` it's recommended that you add `-v /var/attic:/root/.attic` to preserve attic's cache of repositories.
+If you run into issues with unknown repositories, rather than use `ATTIC_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK` it's recommended that you add `-v /var/attic-cache:/root/.cache/attic` to preserve attic's cache of repositories.

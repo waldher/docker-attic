@@ -7,5 +7,6 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates build-b
     apk del build-dependencies
 
 VOLUME /root/.attic
+VOLUME /root/.cache/attic
 
 ENTRYPOINT ["attic"]
